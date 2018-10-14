@@ -5,15 +5,27 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta",
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-centered": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/vue": "^3.4.11",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
+    "babel-core": "^7.0.0-beta",
+    "babel-preset-vue": "^2.0.2",
+    "babel-runtime": "^7.0.0-beta",
+    "tachyons": "^4.11.1",
     "vue-template-compiler": "^2.5.17"
   }
 }
