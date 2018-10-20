@@ -1,7 +1,7 @@
 <template>
     <div 
-        class="avenir ba w4 tc pv2 animated shadow-4 b f3" 
-        :class="{'shadow-5': !animated}" 
+        class="avenir ba w4 tc pv2 animated shadow-4 fw6 f3" 
+        :class="{'shadow-5': !animated, 'pressed': animated}" 
         @transitionend="transitionDone"
         @click="onClick">
         <slot/>
@@ -18,7 +18,6 @@ export default {
     methods: {
         animate() {
             this.animated = true
-            this.rippling = true
         },
         transitionDone() {
             this.animated = false
@@ -33,8 +32,11 @@ export default {
 
 <style scoped>
     .animated {
-        transition: box-shadow 0.075s ease-in-out, background-color .15s ease-in-out;
+        transition: all 0.075s ease;
         cursor: default;
         user-select: none;
+    }
+    .pressed {
+        background-color: #f4f4f4;
     }
 </style>

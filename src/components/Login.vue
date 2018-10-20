@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form class="w-100">
         <Card>
             <Input inputType="email" label="Email" class="mb3"/>
             <Input inputType="password" label="Password" class="mb4"/>
